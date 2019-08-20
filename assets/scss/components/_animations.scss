@@ -1,0 +1,11 @@
+.nav_menu_icon{
+    img{
+        transform: rotate(-11deg) ;
+        max-width: $space * 3;
+    }
+}
+.nav_menu_icon{
+    img:hover{
+        transform: rotate(0) ;
+    }
+}
