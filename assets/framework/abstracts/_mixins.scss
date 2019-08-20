@@ -1,0 +1,6 @@
+// mixin for grid system
+@mixin break($size){
+    @media (min-width: map-get($breakpoints, $size)) {
+        @content;
+    }
+}

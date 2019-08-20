@@ -1,0 +1,13 @@
+// A new variable should be created only when all of the following criteria are met:
+// the value is repeated at least twice;
+// the value is likely to be updated at least once;
+// all occurrences of the value are tied to the variable (i.e. not by coincidence).
+
+/// grid system
+$breakpoints: (
+    'small': 425px,
+    'medium': 768px,
+    'large': 1024px,
+    'huge': 1200px
+);
+$cols: 12;
