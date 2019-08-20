@@ -27,10 +27,10 @@ section{
     width: 100%;
   }
   .box{
-    background-color: white;
+    background-color: $bg;
     font-weight: bold;
-    font-size: 22px;
-    padding: 10px;
+    font-size: font-size(18px);
+    padding: $space;
   }
   .top-text{
     position: absolute;
@@ -52,50 +52,48 @@ section{
     padding: 200px 64px 148px 64px;
     color: #fff;
     font-weight: bold;
-    font-size: 25px;
+    font-size: font-size(20px);
   }
   .tiny-box:nth-child(1){
-    background-color: rgb(131, 102, 102);
+    background-color: $redMedium;
   }
   .tiny-box:nth-child(2){
-    background-color: #574c4b;
+    background-color: $redLight;
   }
   .tiny-box:nth-child(3){
-    background-color: #7e6e6d;
+    background-color: #b13125;
   }
   .tiny-box:nth-child(4){
-    background-color: #3f3c3c;
+    background-color: #bc3428;
   }
-  .left-top img,
-  .persons_photo img{
-    transform: rotate(-11deg);
-    max-width: 76px;
-    border: 4px solid white;
-    border-radius: 10px;
+  
+  .left-top{
+    span{
+        font-style: italic;
+        font-weight: 400;
+      }
   }
-  .left-top img:hover,
-  .persons_photo img:hover{
-    transform: rotate(0);
+  .left-top{
+    p{
+        margin: 20px 0 0 20px;
+      }
   }
-  .left-top span{
-    font-style: italic;
-    font-weight: 400;
+  .tiny-box{
+    .hMain{
+        padding-top: $space * 3;
+        line-height: 1.5;
+        font-size: font-size(33px);
+      }
   }
-  .left-top p{
-    margin: 20px 0 0 20px;
-  }
-  .tiny-box h1{
-    padding-top: 30px;
-    line-height: 1.5;
-    font-size: 33px;
-  }
-  .tiny-box i:after{
-    content: '→';
-    display: block;
-    color: #fff;
-    font-size: 70px;
-    padding: 0;
-    position: absolute;
+  .tiny-box{
+    i:after{
+        content: '→';
+        display: block;
+        color: #fff;
+        font-size: 70px;
+        padding: 0;
+        position: absolute;
+      }
   }
 
   // ====END first-section====
@@ -191,9 +189,7 @@ margin-top: 50px;
 }
 
 .article_container{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-auto-rows: 500px;
+  
   padding-top: 40px;
 }
 

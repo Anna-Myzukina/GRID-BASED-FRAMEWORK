@@ -1,3 +1,4 @@
+// nav menu rotation
 .nav_menu_icon{
     img{
         transform: rotate(-11deg) ;
@@ -9,3 +10,17 @@
         transform: rotate(0) ;
     }
 }
+
+// first-section rotation
+
+.left-top img,
+  .persons_photo img{
+    transform: rotate(-11deg);
+    max-width: 76px;
+    border: 4px solid white;
+    border-radius: $space;
+  }
+  .left-top img:hover,
+  .persons_photo img:hover{
+    transform: rotate(0);
+  }
