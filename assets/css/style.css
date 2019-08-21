@@ -34,6 +34,14 @@
   .top-text {
     display: none; } }
 
+@media only screen and (max-width: 320px) {
+  .book-right img {
+    height: 300px;
+    width: 200px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    margin-left: 30px; } }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
