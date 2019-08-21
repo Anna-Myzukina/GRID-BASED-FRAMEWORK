@@ -392,3 +392,85 @@ a.load_more_link {
     height: 200px;
   }
   /*===== END newsletter =====*/
+
+  /*===== START footer ===============*/
+
+.links-footer {
+  background-color: rgb(78, 78, 78);
+  border: 1px solid rgb(202, 73, 73);
+  padding: 100px;
+  padding-top:25px;
+}
+
+.links-footer h3 {
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
+
+.list,
+.list2 { 
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.list li{
+  display: inline-block;
+  padding-top: 10px;
+  font-size: 25px;
+  line-height: 1.7;
+}
+
+.links-footer li:before {
+  content: '•';
+  margin-right: 0.5em;
+  font-size: 11px;
+  color: red;
+}
+
+.list li a:hover {
+  text-decoration: underline;
+  color: #390c09;
+}
+
+.list2 li,
+ .quality-footer a {
+  text-decoration: underline;
+  color: white;
+}
+
+.quality-footer,
+.contact-footer {
+  background-color: rgb(78, 78, 78);
+  padding: 50px;
+  
+}
+.contact-footer {
+
+  background-image: url("https://www.smashingmagazine.com/images/footer/laptop__left.svg"), url("https://www.smashingmagazine.com/images/smashing-cat/cat-the-behemoth.svg");
+  background-repeat: no-repeat;
+  background-position: left 15% bottom 16px,right 12% bottom 32px;
+  background-size: 160px auto, 224px auto;
+}
+
+.list2 li {
+  display: inline-block;
+  line-height: 3;
+}
+
+.list2 li::before {
+  content: '';
+  margin-right: 2em;
+}
+
+.quality-footer h1,h2,h3,h4 {
+  text-align: center;
+  line-height: 1.7;
+}
+
+.quality-footer h1 {
+  font-style: italic;
+}
+
+/*===== END footer =================*/
