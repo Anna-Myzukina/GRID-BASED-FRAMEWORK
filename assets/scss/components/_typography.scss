@@ -1,12 +1,241 @@
 /// fonts
-$fontsMain: 'Lora', serif;
+$fontsMain: 'Lora',
+serif;
 $size: 16px;
 
+
+a,
+span {
+    display: inline-flex;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+
+.left-top p {
+    margin: 20px 0 0 20px;
+    color: $white;
+}
+
+.tiny-box .hMain {
+    padding-top: $space * 3;
+    line-height: 1.5;
+    font-size: 33px;
+    color: $white;
+}
+
+
 .article h2,
-.article_container a{
+.article_container a {
     color: black;
     font-size: 25px;
+}
+
+.article_container p {
+    color: rgb(71, 68, 68);
+}
+
+.article-a {
+    color: $colorText;
+    text-decoration: underline;
+}
+.article_banner a {
+    font-size: 30px;
+    color: rgb(3, 3, 3);
+}
+
+.explore-btn a {
+    color: $linkColour;
+    font-size: 16px;
+}
+.article h2,
+.article_container h2 {
+    color: $colorText;
+    font-size: $space * 2.5;
+}
+
+.article p {
+    font-size: 20px;
+    line-height: 1.7;
+    padding-top: 15px;
+}
+
+.third-block h2 {
+    color: $white;
+    text-decoration: underline;
+}
+
+.banner-second {
+    background-color: $green;
+    text-align: center;
+    padding: $space * 4;
+}
+
+.third-block p {
+    color: $white;
+}
+
+.explore-btn a {
+    color: $linkColour;
+    text-decoration: none;
+}
+
+.left_block p,
+.left-block p {
+    color: $colorText;
+    font-size: 19px;
+    padding: 30px;
+}
+
+.right_block p {
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.right_block h2 {
+    font-size: 40px;
+    line-height: 1.7;
+    padding: 30px;
+    margin: 10px;
+}
+
+.second_person h3,
+.third_person h3,
+.forth_person h3,
+.fifth_person h3,
+.sixth_person h3,
+.seventh_person h3 {
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $colorText;
+}
+
+a.load_more_link {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #333;
+    border-bottom: 5px solid $redMain;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.book-left h3,
+.banner-second h3 {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.second_person p,
+.third_person p,
+.forth_person p,
+.fifth_person p,
+.sixth_person p,
+.seventh_person p {
+    font-size: 22px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.book-left p,
+.banner-second p {
+    color: white;
+    font-size: 22px;
+    line-height: 1.7;
+}
+
+.guide ul,
+.news-right ul{
+  margin: 40px;
+  list-style-type: disc;
+  color: $redMain;
+}
+
+.guide h3,
+.news-right h3,
+.news-left h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.guide h3,
+.news-right h3{
+    color: $colorText;
+}
+
+.guide a,
+.news-right a{
+  text-decoration: underline;
+  font-size: 22px;
+  color: $linkColour;
+}
+
+.news-left p{
+    color: $white;
+}
+.list2 li, 
+.quality-footer a {
+    text-decoration: underline;
+    color: $white;
+}
+
+.links-footer h3 {
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.list,
+.list2 {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.list li {
+    display: inline-block;
+    padding-top: 10px;
+    font-size: 25px;
+    line-height: 1.7;
+}
+
+.links-footer li:before {
+    content: '•';
+    margin-right: 0.5em;
+    font-size: $space * 2;
+    color: $redDark;
+}
+
+.list li a:hover {
+    text-decoration: underline;
+    color: $redDark;
+    text-decoration: none;
+}
+
+.list2 li {
+    display: inline-block;
+    line-height: 3;
   }
-  .article_container p{
-      color: rgb(71, 68, 68);
+  
+  .list2 li::before {
+    content: '';
+    margin-right: 2em;
+  }
+  
+  .quality-footer h2,h3,h4 {
+    text-align: center;
+    line-height: 1.7;
+    color: $white;
+  }
+
+  .hMain,
+  .footer-ital {
+    font-style: italic;
+    color: $white;
   }

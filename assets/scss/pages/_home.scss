@@ -1,203 +1,132 @@
-*{
-	box-sizing: border-box;
-}
-a,
-span{
-	display: inline-flex;
-}
-a{
-	text-decoration: none;
-	color: white;
+* {
+    box-sizing: border-box;
 }
 
-body{
-	font-family: $fontsMain;
-	min-height: 100%;
-	display: flex;
-  flex-direction: column;
-  background-color: $bg;
+body {
+    font-family: $fontsMain;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $bg;
 }
-section{
-	display: block;
+
+section {
+    display: block;
     background: $bg;
 }
 
 // ==== first section =====
-.first-block{
+.first-block {
     width: 100%;
-  }
-  .box{
+}
+
+.box {
     background-color: $bg;
-    font-weight: bold;
-    font-size: font-size(18px);
     padding: $space;
-  }
-  .top-text{
+}
+
+.top-text {
     position: absolute;
-    top: 200px;
-    left: 520px;
+    top: 205px;
+    //left: 535px;
     z-index: 1;
     margin: auto;
     letter-spacing: 1px;
-  }
-  .bottom-text{
+
+}
+
+.bottom-text {
     position: absolute;
     top: 240px;
-    left: 610px;
+    //left: 600px;
     margin: auto;
     letter-spacing: -1px;
-  }
-  
-  .tiny-box{
+   
+}
+
+.tiny-box {
     padding: 200px 64px 148px 64px;
-    color: #fff;
-    font-weight: bold;
-    font-size: font-size(20px);
-  }
-  .tiny-box:nth-child(1){
+}
+
+.tiny-box:nth-child(1) {
     background-color: $redMedium;
-  }
-  .tiny-box:nth-child(2){
+}
+
+.tiny-box:nth-child(2) {
     background-color: $redLight;
-  }
-  .tiny-box:nth-child(3){
-    background-color: #b13125;
-  }
-  .tiny-box:nth-child(4){
-    background-color: #bc3428;
-  }
-  
-  .left-top{
-    span{
-        font-style: italic;
-        font-weight: 400;
-      }
-  }
-  .left-top{
-    p{
-        margin: 20px 0 0 20px;
-      }
-  }
-  .tiny-box{
-    .hMain{
-        padding-top: $space * 3;
-        line-height: 1.5;
-        font-size: font-size(33px);
-      }
-  }
-  .tiny-box{
-    i:after{
-        content: '→';
-        display: block;
-        color: #fff;
-        font-size: 70px;
-        padding: 0;
-        position: absolute;
-      }
-  }
+}
 
-  // ====END first-section====
+.tiny-box:nth-child(3) {
+    background-color: $redDark;
+}
 
-  // ====articles-box===
+.tiny-box:nth-child(4) {
+    background-color: $redMiddle;
+}
 
-.article{
+.tiny-box i:after,
+.articles-box i:after {
+    content: '→';
+    display: block;
+    padding: 0;
+    position: absolute;
+}
+.tiny-box i:after{
+    color: $white;
+    font-size: $space * 7;
+}
+
+.articles-box i:after{
+    color: $redMain;
+    font-size: $space * 7;
+}
+// ====END first-section====
+
+// ====articles-box===
+
+.article {
     padding: 20px 20px 150px 20px;
-  }
-  
-  .first-article {
+}
+
+.first-article {
     background-color: $bg;
-  }
-  
-  .second-article {
+}
+
+.second-article {
     background-color: $bg;
-  }
-  
-  .third-article {
+}
+
+.third-article {
     background-color: $bg;
-  }
-  
-  .article-a{
-      color: $colorText;
-      text-decoration: underline;
-  } 
-  .article h2,
-  .article_container h2{
-    color: black;
-    font-size: 25px;
-  }
-  
-  .article p {
-    font-size: 20px;
-    line-height: 1.7;
-    padding-top: 15px;
-  }
-  
-  .left-block{
+}
+
+.left-block {
     margin: 60px 25px 0 25px;
     text-align: center;
-  }
+}
 
-  /*======START EXPLORE=======*/
+/*======START EXPLORE=======*/
 
-.third-block{
-  margin: auto;
-  border-radius: 5px;
-  background-color: $bg;
-}
-.third-block h2{
-    color: #fff;
-    text-decoration: underline;
-}
-.third-block p{
-    color: #fff;
-}
-.explore-btn{
-    background: $bg;
-    padding: 15px 5px;
-    width: 200px;
-}
-.explore-btn a{
-    color: $linkColour;
-    text-decoration: none;
+.third-block {
+    margin: auto;
+    border-radius: 5px;
+    background-color: $bg;
 }
 
 .left_block {
-  height: 300px;
-  background-color: $bg;
-  margin: 60px 25px 0 25px;
-  border-radius: 12px;
-  text-align: center;
+    height: $minHeight * 2;
+    background-color: $bg;
+    margin: 60px 25px 0 25px;
+    border-radius: 12px;
+    text-align: center;
 }
 
 .right_block {
-  height: 500px;
-  background-color: $redMain;
-  border-radius: 12px;
-  text-align: center;
-  margin: 15px;
-}
-
-.left_block p ,
-.left-block p{
-color: $colorText;
-  font-size: 19px;
-  padding: 30px;
-}
-
-.right_block p {
-  font-size: 20px;
-  line-height: 1.7;
-}
-
-.right_block h2 {
-  font-size: 40px;
-  line-height: 1.7;
-  padding: 30px;
-  margin: 10px;
-}
-.explore-btn {
-margin-top: 50px;
-background: white;
+    height: 500px;
+    background-color: $redMain;
+    border-radius: 12px;
+    text-align: center;
+    margin: 15px;
 }
 
 /*======END EXPLORE=========*/
@@ -205,272 +134,176 @@ background: white;
 /*======START article-container and article-banner======*/
 
 .forth_block {
-  margin: auto;
-  background-color: $bg;
+    margin: auto;
+    background-color: $bg;
 }
 
-.article_container{
-  
-  padding-top: 40px;
+.article_container {
+    padding-top: 40px;
 }
 
-.article_banner a {
-  font-size: 30px;
-  color: rgb(3, 3, 3);
+/*===banner second ==*/
+
+.banner {
+    background-position: center;
+    background-image: linear-gradient($green 50%, $greenLight 100%);
 }
-.explore-btn a{
-    color: $linkColour;
-    font-size: 16px;
+
+
+/*======END article-container and article-banner ========*/
+
+/*======START PERSON OF THE WEEK ========*/
+.person-of-the-week {
+    margin: auto;
+    border-radius: 15px;
+    background-color: $bg;
 }
-.banner-second{
-  background-color: #4f6e5e;
+
+.second_person h3,
+.book-left h3,
+.banner-second h3,
+.third_person h3,
+.forth_person h3,
+.fifth_person h3,
+.sixth_person h3,
+.seventh_person h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.first_person,
+.second_person {
+    padding: 50px;
+}
+
+.second_person h3 {
+    padding-bottom: 20px;
+}
+
+.first_person img {
+    width: 250px;
+    border-radius: 8px;
+    border: 5px solid $redMain;
+    margin: 22px 0 0 10px;
+}
+
+
+.person {
+    padding: 50px 35px;
+}
+
+.left-top img,
+  .persons_photo img{
+    max-width: 76px;
+    border: 4px solid $white;
+    border-radius: $space;
+  }
+/*======END PERSON OF THE WEEK ========*/
+
+/*===== START load more section====*/
+a.load_more_link:after {
+    content: ' → ';
+}
+
+.load_more {
+    background-color: $bg;
+    height: 200px;
     text-align: center;
-    padding: 40px 219px;
+    padding: 80px 0 80px;
 }
-.banner{
-  background: url(https://d33wubrfki0l68.cloudfront.net/148069bc1849f0c7b2304c945073dbdfdb6341f0/b12bb/images/printed-mag/printmag-homepage-opt.svg) no-repeat;
-  background-position: center;
-  padding: 250px;
-  background-color: grey;
-}
+
 a.load_more_link {
     text-transform: uppercase;
     font-size: 20px;
-    color: #333;
-    border-bottom: 5px solid #d33a2c;
+    color: $grey;
     letter-spacing: 1px;
     padding: 10px 0;
     cursor: pointer;
 }
-/*======END article-container and article-banner ========*/
 
-/*======START PERSON OF THE WEEK ========*/
-.person-of-the-week{
-    margin: auto;
-    border-radius: 15px;
-    background-color: #d8cdcd;
-  }
-  
-  .second_person h3,
-  .book-left h3,
-  .banner-second h3,
-  .third_person h3,
-  .forth_person h3,
-  .fifth_person h3,
-  .sixth_person h3,
-  .seventh_person h3{
-    font-size: 26px;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-transform: uppercase;
-    color: rgb(43, 38, 30);
-  }
-  
-  .second_person p,
-  .book-left p,
-  .banner-second p,
-  .third_person p,
-  .forth_person p,
-  .fifth_person p,
-  .sixth_person p,
-  .seventh_person p{
-    font-size: 22px;
-    line-height: 1.7;
-    color: #333;
-  }
-  
-  .first_person,
-  .second_person{
+/*=====START BOOK======*/
+.featured-smashing-book {
+    background: $redMain;
+}
+
+.book-left {
     padding: 50px;
-  }
-  .second_person h3{
-    padding-bottom: 20px;
-  }
-  
-  .first_person img {
-    width: 250px;
-    border-radius: 8px;
-    border: 5px solid chocolate;
-    transform: rotate(-11deg);
-    margin: 22px 0 0 10px;
-  }
-  
-  .first_person img:hover {
-    transform: rotate(0);
-  }
-  
-  .person{
-    padding: 50px 35px;
-  }
-  .person-of-the-week>:nth-child(2){
-    background-color: #857d7d;
-  }
-  .person-of-the-week>:nth-child(3){
-    background-color: #645353;
-  }
-  .person-of-the-week>:nth-child(3){
-    background-color: #b68c8c;
-  }
-  
-  /*======END PERSON OF THE WEEK ========*/
-  
-  /*===== START load more section====*/
-  a.load_more_link:after {
-      content: ' → ';
-  }
-  .load_more {
-    background-color: rgb(163, 157, 157);
-      height: 200px;
-    text-align: center;
-      padding: 80px 0 80px;
-  }
-  a.load_more_link {
-      text-transform: uppercase;
-      font-size: 20px;
-      color: #333;
-      border-bottom: 5px solid #d33a2c;
-      letter-spacing: 1px;
-      padding: 10px 0;
-      cursor: pointer;
-  }
-  
-  /*=====START BOOK======*/
-  .book-left{
-    padding: 50px;
-  }
-  .book-right{
+}
+
+.book-right {
     padding-bottom: 30px;
-  }
-  .book-right img {
+}
+
+.book-right img {
     height: 400px;
     width: 250px;
-    transform: rotate(-11deg);
     padding-bottom: 30px;
-  } 
-  .book-right img:hover{
-    transform: rotate(0);
-  }
-  
-  
-  /*=====END BOOK========*/
-  
-  /*===== START guides =====*/
-  .guide h3,
-  .news-right h3,
-  .news-left h3{
-    font-size: 30px;
-    font-weight: bold;
-  }
-  .guide{
-    padding: 30px;
-  }
-  .guide ul,
-  .news-right ul{
-    margin: 40px;
-  }
-  .guide a,
-  .news-right a{
-    text-decoration: underline;
-    color: blue;
-    font-size: 20px;
-    line-height: 1.5;
-  }
-  /*===== END guides ========*/
-  
-  /*===== START newsletter =====*/
-  .newsletter section{
-    background-color: red;
-  }
-  .news-left{
-    padding: 30px;
-    text-align: center;
-  }
-  .news-left img{
-    width: 200px;
-    height: 200px;
-  }
-  /*===== END newsletter =====*/
+}
 
-  /*===== START footer ===============*/
+
+/*=====END BOOK========*/
+
+/*===== START guides =====*/
+
+
+.guide {
+    padding: 30px;
+}
+
+.guide li {
+    margin-bottom: $space * 1.8;
+    margin-left: $space * 8;
+}
+
+/*===== END guides ========*/
+
+/*===== START newsletter =====*/
+.newsletter section {
+    background-color: $redMain;
+}
+
+.news-left {
+    margin-top: 50px;
+    text-align: center;
+    height: 620px;
+    padding: 50px;
+    text-align: center;
+    background-color: $redMain;
+    border-radius: 12px;
+}
+
+.news-left img {
+    width: 300px;
+    height: 300px;
+}
+
+.news-right{
+    padding-left: 20px;
+}
+/*===== END newsletter =====*/
+
+/*===== START footer ===============*/
 
 .links-footer {
-  background-color: rgb(78, 78, 78);
-  border: 1px solid rgb(202, 73, 73);
-  padding: 100px;
-  padding-top:25px;
+    background-color: $redMain;
+    padding: 100px;
+    padding-top: 25px;
 }
 
-.links-footer h3 {
-  text-align: center;
-  color: white;
-  padding: 30px;
-}
 
-.list,
-.list2 { 
-  list-style-type: none;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-.list li{
-  display: inline-block;
-  padding-top: 10px;
-  font-size: 25px;
-  line-height: 1.7;
-}
-
-.links-footer li:before {
-  content: '•';
-  margin-right: 0.5em;
-  font-size: 11px;
-  color: red;
-}
-
-.list li a:hover {
-  text-decoration: underline;
-  color: #390c09;
-}
-
-.list2 li,
- .quality-footer a {
-  text-decoration: underline;
-  color: white;
-}
-
-.quality-footer,
+  .quality-footer,
 .contact-footer {
-  background-color: rgb(78, 78, 78);
+  background-color: $redMain;
   padding: 50px;
   
 }
+  
+
 .contact-footer {
-
-  background-image: url("https://www.smashingmagazine.com/images/footer/laptop__left.svg"), url("https://www.smashingmagazine.com/images/smashing-cat/cat-the-behemoth.svg");
-  background-repeat: no-repeat;
-  background-position: left 15% bottom 16px,right 12% bottom 32px;
-  background-size: 160px auto, 224px auto;
+    background-image: url("https://www.smashingmagazine.com/images/footer/laptop__left.svg"), url("https://www.smashingmagazine.com/images/smashing-cat/cat-the-behemoth.svg");
+    background-repeat: no-repeat;
+    background-position: left 15% bottom 16px, right 12% bottom 32px;
+    background-size: 160px auto, 224px auto;
 }
-
-.list2 li {
-  display: inline-block;
-  line-height: 3;
-}
-
-.list2 li::before {
-  content: '';
-  margin-right: 2em;
-}
-
-.quality-footer h1,h2,h3,h4 {
-  text-align: center;
-  line-height: 1.7;
-}
-
-.quality-footer h1 {
-  font-style: italic;
-}
-
-/*===== END footer =================*/

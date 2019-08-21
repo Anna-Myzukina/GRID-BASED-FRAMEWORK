@@ -5,6 +5,7 @@
         max-width: $space * 3;
     }
 }
+
 .nav_menu_icon{
     img:hover{
         transform: rotate(0) ;
@@ -16,11 +17,28 @@
 .left-top img,
   .persons_photo img{
     transform: rotate(-11deg);
-    max-width: 76px;
-    border: 4px solid white;
-    border-radius: $space;
   }
   .left-top img:hover,
   .persons_photo img:hover{
     transform: rotate(0);
   }
+
+  // book section rotate
+  .first_person img {
+    transform: rotate(-11deg);
+}
+
+.first_person img:hover {
+    transform: rotate(0);
+}
+
+.book-right img {
+  height: 400px;
+  width: 250px;
+  transform: rotate(-11deg);
+  padding-bottom: 30px;
+}
+
+.book-right img:hover {
+  transform: rotate(0);
+}
