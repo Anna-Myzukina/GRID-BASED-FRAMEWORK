@@ -4,16 +4,15 @@
 // all occurrences of the value are tied to the variable (i.e. not by coincidence).
 
 /// grid system
-$breakpoints: (
-    'small': 425px,
+$breakpoints: ('small': 425px,
     'medium': 768px,
     'large': 1024px,
-    'huge': 1200px
-);
+    'huge': 1200px);
 $cols: 12;
 
 /// fonts
-$fontsMain: 'Lora', serif;
+$fontsMain: 'Lora',
+serif;
 
 /// sizes
 $minHeight: 150px;
@@ -34,6 +33,3 @@ $greenLight: #8bc53f;
 $linkColour: #006fc6;
 $colorText: #111;
 $grey: #333;
-
-
-

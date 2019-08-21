@@ -41,6 +41,7 @@ a {
     color: $colorText;
     text-decoration: underline;
 }
+
 .article_banner a {
     font-size: 30px;
     color: rgb(3, 3, 3);
@@ -50,6 +51,7 @@ a {
     color: $linkColour;
     font-size: 16px;
 }
+
 .article h2,
 .article_container h2 {
     color: $colorText;
@@ -150,10 +152,10 @@ a.load_more_link {
 }
 
 .guide ul,
-.news-right ul{
-  margin: 40px;
-  list-style-type: disc;
-  color: $redMain;
+.news-right ul {
+    margin: 40px;
+    list-style-type: disc;
+    color: $redMain;
 }
 
 .guide h3,
@@ -164,21 +166,22 @@ a.load_more_link {
 }
 
 .guide h3,
-.news-right h3{
+.news-right h3 {
     color: $colorText;
 }
 
 .guide a,
-.news-right a{
-  text-decoration: underline;
-  font-size: 22px;
-  color: $linkColour;
+.news-right a {
+    text-decoration: underline;
+    font-size: 22px;
+    color: $linkColour;
 }
 
-.news-left p{
+.news-left p {
     color: $white;
 }
-.list2 li, 
+
+.list2 li,
 .quality-footer a {
     text-decoration: underline;
     color: $white;
@@ -221,21 +224,23 @@ a.load_more_link {
 .list2 li {
     display: inline-block;
     line-height: 3;
-  }
-  
-  .list2 li::before {
+}
+
+.list2 li::before {
     content: '';
     margin-right: 2em;
-  }
-  
-  .quality-footer h2,h3,h4 {
+}
+
+.quality-footer h2,
+h3,
+h4 {
     text-align: center;
     line-height: 1.7;
     color: $white;
-  }
+}
 
-  .hMain,
-  .footer-ital {
+
+.footer-ital {
     font-style: italic;
     color: $white;
-  }
+}

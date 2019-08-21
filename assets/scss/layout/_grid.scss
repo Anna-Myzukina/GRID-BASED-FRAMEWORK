@@ -1,22 +1,21 @@
-$breakpoints: (
-    'small': 425px,
+$breakpoints: ('small': 425px,
     'medium': 768px,
     'large': 1024px,
-    'huge': 1200px
-);
+    'huge': 1200px);
 
 /// this variable means number of column in your project, if you need you can
 ///  change to any number and use next formula to create grid system:
 $cols: 12;
 
-@mixin break($size){
+@mixin break($size) {
     @media (min-width: map-get($breakpoints, $size)) {
         @content;
     }
 }
 
-@each $key, $value in $breakpoints{
-    @include break($key){
+@each $key,
+$value in $breakpoints {
+    @include break($key) {
         @for $i from 1 through $cols {
             .col-#{$key}-#{$i} {
                 width: #{$i / $cols * 100%};
@@ -30,19 +29,21 @@ $cols: 12;
 /// author Nicolas Gallanger
 /// link http://nicolasgallagher.com/micro-clearfix-hack/ Micro Clearfix
 
-@mixin clearfix(){
-    &:after{
+@mixin clearfix() {
+    &:after {
         content: "";
         display: block;
         clear: both;
     }
-    &:before{
+
+    &:before {
         content: "";
         display: block;
         clear: both;
     }
-    
+
 }
-.row{
+
+.row {
     @include clearfix;
 }

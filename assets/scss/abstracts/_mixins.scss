@@ -1,5 +1,5 @@
 // mixin for grid system
-@mixin break($size){
+@mixin break($size) {
     @media (min-width: map-get($breakpoints, $size)) {
         @content;
     }
@@ -8,5 +8,5 @@
 // mixin for counting font-size
 @mixin font-size($size) {
     font-size: calculate-rem($size);
-  }
+}
 

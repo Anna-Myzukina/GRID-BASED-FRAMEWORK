@@ -1,35 +1,36 @@
 // nav menu rotation
-.nav_menu_icon{
-    img{
-        transform: rotate(-11deg) ;
-        max-width: $space * 3;
-    }
+.nav_menu_icon {
+  img {
+    transform: rotate(-11deg);
+    max-width: $space * 3;
+  }
 }
 
-.nav_menu_icon{
-    img:hover{
-        transform: rotate(0) ;
-    }
+.nav_menu_icon {
+  img:hover {
+    transform: rotate(0);
+  }
 }
 
 // first-section rotation
 
 .left-top img,
-  .persons_photo img{
-    transform: rotate(-11deg);
-  }
-  .left-top img:hover,
-  .persons_photo img:hover{
-    transform: rotate(0);
-  }
+.persons_photo img {
+  transform: rotate(-11deg);
+}
 
-  // book section rotate
-  .first_person img {
-    transform: rotate(-11deg);
+.left-top img:hover,
+.persons_photo img:hover {
+  transform: rotate(0);
+}
+
+// book section rotate
+.first_person img {
+  transform: rotate(-11deg);
 }
 
 .first_person img:hover {
-    transform: rotate(0);
+  transform: rotate(0);
 }
 
 .book-right img {

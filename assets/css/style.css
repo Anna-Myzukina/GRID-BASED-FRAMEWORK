@@ -1,64 +1,89 @@
 @charset "UTF-8";
-@media (max-width: 1400px) {
-  .top-text {
-    left: 595px; }
-  .bottom-text {
-    left: 660px; } }
-
-@media (max-width: 1200px) {
-  .top-text {
-    left: 535px; }
-  .bottom-text {
-    left: 600px; } }
-
-@media only screen and (max-width: 1024px) {
-  .top-text {
-    left: 417px; }
-  .bottom-text {
-    left: 477px; }
-  .main-nav_item_p {
-    display: none; } }
-
-@media only screen and (max-width: 768px) {
-  .bottom-text {
-    left: 345px; }
-  .top-text {
-    left: 285px; } }
-
-@media only screen and (max-width: 900px) {
-  .nav_menu_list {
-    display: none; } }
-
-@media only screen and (max-width: 525px) {
-  .bottom-text,
-  .top-text {
-    display: none; } }
-
-@media only screen and (max-width: 320px) {
-  .book-right img {
-    height: 300px;
-    width: 200px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    margin-left: 30px; } }
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -67,21 +92,34 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block; }
 
 body {
   line-height: 1; }
 
-ol, ul {
+ol,
+ul {
   list-style: none; }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none; }
 
@@ -346,12 +384,13 @@ a.load_more_link {
   content: '';
   margin-right: 2em; }
 
-.quality-footer h2, h3, h4 {
+.quality-footer h2,
+h3,
+h4 {
   text-align: center;
   line-height: 1.7;
   color: #fff; }
 
-.hMain,
 .footer-ital {
   font-style: italic;
   color: #fff; }
@@ -550,7 +589,8 @@ a.load_more_link {
   -ms-flex-align: center;
   align-items: center;
   font-size: font-size(17px);
-  font-weight: 700; }
+  font-weight: 700;
+  margin-right: 10px; }
 
 figure:hover,
 .nav_menu_item_h2:hover,
@@ -560,9 +600,6 @@ figcaption:hover > p {
 .nav_menu_icon img {
   margin-right: 32px;
   margin-bottom: 10px; }
-
-.nav_menu_list {
-  margin-right: 10px; }
 
 .nav_menu_item_h2 span {
   font-size: 22px;
@@ -825,3 +862,96 @@ a.load_more_link {
   background-repeat: no-repeat;
   background-position: left 15% bottom 16px, right 12% bottom 32px;
   background-size: 160px auto, 224px auto; }
+
+@media only screen and (max-width: 1400px) {
+  .top-text {
+    left: 595px; }
+  .bottom-text {
+    left: 660px; } }
+
+@media only screen and (max-width: 1200px) {
+  .top-text {
+    left: 535px; }
+  .bottom-text {
+    left: 600px; } }
+
+@media only screen and (max-width: 1024px) {
+  .top-text {
+    left: 417px; }
+  .bottom-text {
+    left: 477px; }
+  .main-nav_item_p {
+    display: none; } }
+
+@media only screen and (max-width: 900px) {
+  .nav_menu_list {
+    display: none;
+    opacity: 0; }
+  .logo {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 60px;
+    height: 80px;
+    margin: auto; }
+  .contact-footer {
+    background-position: left 3% bottom 0px, right 0% bottom 6px;
+    background-size: 129px auto, 160px auto; } }
+
+@media only screen and (max-width: 768px) {
+  .bottom-text {
+    left: 350px; }
+  .top-text {
+    left: 280px; }
+  .contact-footer {
+    background-position: left 3% bottom 0px, right 0% bottom 6px;
+    background-size: 129px auto, 160px auto; } }
+
+@media only screen and (max-width: 525px) {
+  .top-text {
+    left: 109px; }
+  .bottom-text {
+    left: 176px; }
+  .nav_menu_list {
+    display: none;
+    opacity: 0; }
+  .logo {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+  .first_person img {
+    width: 190px; }
+  .tiny-box .hMain {
+    font-size: 30px; }
+  .book-right img {
+    height: 377px;
+    width: 216px;
+    padding-bottom: 30px;
+    margin-left: 78px; }
+  .list li {
+    font-size: 16px; }
+  .contact-footer {
+    background-position: left -5% bottom 0px, right 0% bottom 6px;
+    background-size: 98px auto, 116px auto; } }
+
+@media only screen and (max-width: 320px) {
+  .book-right img {
+    height: 300px;
+    width: 200px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    margin-left: 30px; }
+  .nav_menu_list {
+    display: none;
+    opacity: 0; }
+  .logo {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 60px;
+    height: 80px;
+    margin: auto; }
+  .top-text {
+    left: 65px; }
+  .bottom-text {
+    left: 131px; } }
