@@ -10,3 +10,15 @@
     font-size: calculate-rem($size);
 }
 
+// mixin for responsive images
+@mixin img-fluid {
+    & {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+// mixin for creating border-radius
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
