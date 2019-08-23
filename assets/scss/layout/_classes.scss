@@ -1,177 +1,113 @@
-// Spasing margins: 
-
-.m-auto {
-  margin: auto;
-}
-.ml-auto {
-  margin-left: auto;
-}
-.mr-auto {
-  margin-right: auto;
-}
-.mt-auto {
-  margin-top: auto;
-}
-.mb-auto {
-  margin-bottom: auto;
-}
-
-// Margin top
-.mt-0 {
-  margin-top: 0 !important;
-}
-.mt-1 {
-  margin-top: ($spacing * .25) !important;
-}
-.mt-2 {
-  margin-top: ($spacing * (.25 * 2)) !important;
-}
-.mt-3 {
-  margin-top: ($spacing * (.25 * 3)) !important;
-}
-.mt-4 {
-  margin-top: ($spacing * (.25 * 4)) !important;
-}
-.mt-5 {
-  margin-top: ($spacing * (.25 * 5)) !important;
-}
-// Margin Left
-.ml-0 {
-  margin-left: 0 !important;
-}
-.ml-1 {
-  margin-left: ($spacing * .25) !important;
-}
-.ml-2 {
-  margin-left: ($spacing * (.25 * 2)) !important;
-}
-.ml-3 {
-  margin-left: ($spacing * (.25 * 3)) !important;
-}
-.ml-4 {
-  margin-left: ($spacing * (.25 * 4)) !important;
-}
-.ml-5 {
-  margin-left: ($spacing * (.25 * 5)) !important;
-}
-// Margin Bottom
-.mb-0 {
-  margin-bottom: 0 !important;
-}
-.mb-1 {
-  margin-bottom: ($spacing * .25) !important;
-}
-.mb-2 {
-  margin-bottom: ($spacing * (.25 * 2)) !important;
-}
-.mb-3 {
-  margin-bottom: ($spacing * (.25 * 3)) !important;
-}
-.mb-4 {
-  margin-bottom: ($spacing * (.25 * 4)) !important;
-}
-.mb-5 {
-  margin-bottom: ($spacing * (.25 * 5)) !important;
-}
-// Margin Right
-.mr-0 {
-  margin-right: 0 !important;
-}
-.mr-1 {
-  margin-right: ($spacing * .25) !important;
-}
-.mr-2 {
-  margin-right: ($spacing * (.25 * 2)) !important;
-}
-.mr-3 {
-  margin-right: ($spacing * (.25 * 3)) !important;
-}
-.mr-4 {
-  margin-right: ($spacing * (.25 * 4)) !important;
-}
-.mr-5 {
-  margin-right: ($spacing * (.25 * 5)) !important;
+$sides:(top, bottom, left, right);
+$sizes:(sm, md, lg);
+$values:1rem;
+@each $side in $sides{
+ @each $value in $values {
+   @each $size in $sizes{
+   .margin-#{$side}-#{$size}-#{$value} {
+    @if $size == sm {
+       $new_val:round($value/4);
+       margin-#{$side}:#{$new_val}rem;
+    }
+    @else if  $size == md {
+       $new_val:round($value/3);
+       margin-#{$side}:#{$new_val}px;  
+   }
+   @else if  $size == lg {  
+       $new_val:round($value);
+       margin-#{$side}:#{$new_val}px;
+   }
+ }
+ .padding-#{$side}-#{$size}-#{$value} {
+   @if $size == sm {
+      $new_val:round($value/4);
+      padding-#{$side}:#{$new_val}px;
+   }
+   @else if  $size == md {
+      $new_val:round($value/3);
+      padding-#{$side}:#{$new_val}px;
+  }
+  @else if  $size == lg {
+      $new_val:round($value);
+      padding-#{$side}:#{$new_val}px;
+  }
+ }
+   }
+ }
 }
 
-//Spasing paddings:
-// Padding top
-.pt-0 {
-  padding-top: 0 !important;
-}
-.pt-1 {
-  padding-top: ($spacing * .25) !important;
-}
-.pt-2 {
-  padding-top: ($spacing * (.25 * 2)) !important;
-}
-.pt-3 {
-  padding-top: ($spacing * (.25 * 3)) !important;
-}
-.pt-4 {
-  padding-top: ($spacing * (.25 * 4)) !important;
-}
-.pt-5 {
-  padding-top: ($spacing * (.25 * 5)) !important;
-}
-// Padding Left
-.pl-0 {
-  padding-left: 0 !important;
-}
-.pl-1 {
-  padding-left: ($spacing * .25) !important;
-}
-.pl-2 {
-  padding-left: ($spacing * (.25 * 2)) !important;
-}
-.pl-3 {
-  padding-left: ($spacing * (.25 * 3)) !important;
-}
-.pl-4 {
-  padding-left: ($spacing * (.25 * 4)) !important;
-}
-.pl-5 {
-  padding-left: ($spacing * (.25 * 5)) !important;
-}
-// Padding Bottom
-.pb-0 {
-  padding-bottom: 0 !important;
-}
-.pb-1 {
-  padding-bottom: ($spacing * .25) !important;
-}
-.pb-2 {
-  padding-bottom: ($spacing * (.25 * 2)) !important;
-}
-.pb-3 {
-  padding-bottom: ($spacing * (.25 * 3)) !important;
-}
-.pb-4 {
-  padding-bottom: ($spacing * (.25 * 4)) !important;
-}
-.pb-5 {
-  padding-bottom: ($spacing * (.25 * 5)) !important;
-}
-//Padding Right
-.pr-0 {
-  padding-right: 0 !important;
-}
-.pr-1 {
-  padding-right: ($spacing * .25) !important;
-}
-.pr-2 {
-  padding-right: ($spacing * (.25 * 2)) !important;
-}
-.pr-3 {
-  padding-right: ($spacing * (.25 * 3)) !important;
-}
-.pr-4 {
-  padding-right: ($spacing * (.25 * 4)) !important;
-}
-.pr-5 {
-  padding-right: ($spacing * (.25 * 5)) !important;
-}
+//This formula create next properties for margine/padding : 
+.margin-top-sm-1rem {
+  margin-top: 0remrem; }
 
+.padding-top-sm-1rem {
+  padding-top: 0rempx; }
 
+.margin-top-md-1rem {
+  margin-top: 0rempx; }
+
+.padding-top-md-1rem {
+  padding-top: 0rempx; }
+
+.margin-top-lg-1rem {
+  margin-top: 1rempx; }
+
+.padding-top-lg-1rem {
+  padding-top: 1rempx; }
+
+.margin-bottom-sm-1rem {
+  margin-bottom: 0remrem; }
+
+.padding-bottom-sm-1rem {
+  padding-bottom: 0rempx; }
+
+.margin-bottom-md-1rem {
+  margin-bottom: 0rempx; }
+
+.padding-bottom-md-1rem {
+  padding-bottom: 0rempx; }
+
+.margin-bottom-lg-1rem {
+  margin-bottom: 1rempx; }
+
+.padding-bottom-lg-1rem {
+  padding-bottom: 1rempx; }
+
+.margin-left-sm-1rem {
+  margin-left: 0remrem; }
+
+.padding-left-sm-1rem {
+  padding-left: 0rempx; }
+
+.margin-left-md-1rem {
+  margin-left: 0rempx; }
+
+.padding-left-md-1rem {
+  padding-left: 0rempx; }
+
+.margin-left-lg-1rem {
+  margin-left: 1rempx; }
+
+.padding-left-lg-1rem {
+  padding-left: 1rempx; }
+
+.margin-right-sm-1rem {
+  margin-right: 0remrem; }
+
+.padding-right-sm-1rem {
+  padding-right: 0rempx; }
+
+.margin-right-md-1rem {
+  margin-right: 0rempx; }
+
+.padding-right-md-1rem {
+  padding-right: 0rempx; }
+
+.margin-right-lg-1rem {
+  margin-right: 1rempx; }
+
+.padding-right-lg-1rem {
+  padding-right: 1rempx; }
 //Float 
 .right-float{
     float:right!important;
@@ -208,7 +144,10 @@
 }
 
 //The display Property
-.display-none{
+.display-flex{
+  display: flex !important;
+}
+.display-md-none{
     display: none !important;
 }
 .display-inline{
@@ -293,6 +232,15 @@ h6 {
     font-size: $spacing * .6;
 
 }
+.font-bold{
+  font-weight: bold;
+}
+.font-normal{
+  font-weight: normal;
+}
+.font-medium{
+  font-weight: 500;
+}
 //Border property
 
 .border-0 {
@@ -315,6 +263,64 @@ h6 {
   border-left: 0 !important;
 }
 
+.border-sm-1{
+  border: 1px solid $redMain;
+}
+.border-sm-left-1{
+  border-left: 1px solid $redMain;
+}
+.border-sm-right-1{
+  border-right: 1px solid $redMain;
+}
+.border-sm-top-1{
+  border-top: 1px solid $redMain;
+}
+.border-sm-bottom-1{
+  border-bottom: 1px solid $redMain;
+}
+
+.border-md-2{
+  border: 2px solid $redMain;
+}
+.border-md-left-2{
+  border-left: 2px solid $redMain;
+}
+.border-md-right-2{
+  border-right: 1px solid $redMain;
+}
+.border-md-top-2{
+  border-top: 1px solid $redMain;
+}
+.border-md-bottom-2{
+  border-bottom: 2px solid $redMain;
+}
+.border-ld-5{
+  border: 5px solid $redMain;
+}
+.border-ld-left-5{
+  border-left: 5px solid $redMain;
+}
+.border-ld-right-5{
+  border-right: 5px solid $redMain;
+}
+.border-ld-top-5{
+  border-top: 1px solid $redMain;
+}
+.border-ld-bottom-5{
+  border-bottom: 5px solid $redMain;
+}
+.border-radius-sm{
+  border-radius: .25rem;
+}
+.border-radius-md{
+  border-radius: .5rem;
+}
+.border-radius-lg{
+  border-radius: 1rem;
+}
+.border-rounder{
+  border-radius: 50%;
+}
 // Main property 
 .main-bg{
     background: $bg;

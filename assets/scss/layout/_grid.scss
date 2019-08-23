@@ -6,7 +6,10 @@ $breakpoints: ('small': 425px,
 /// this variable means number of column in your project, if you need you can
 ///  change to any number and use next formula to create grid system:
 $cols: 12;
-
+$spacing: 1rem; 
+$sides:(top, bottom, left, right);
+$sizes:(sm, md, lg);
+$values:(0, .25rem, .5rem, 1rem);
 @mixin break($size) {
     @media (min-width: map-get($breakpoints, $size)) {
         @content;
