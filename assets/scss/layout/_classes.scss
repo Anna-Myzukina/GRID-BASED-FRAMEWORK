@@ -39,6 +39,22 @@ $values:1rem;
           padding-#{$side}:#{$new_val}px;
         }
       }
+      .padding-#{$side}-#{$size}-#{$value} {
+        @if $size==sm {
+          $new_val: round($value/4);
+          padding-#{$side}:#{$new_val}px;
+        }
+
+        @else if $size==md {
+          $new_val: round($value/3);
+          padding-#{$side}:#{$new_val}px;
+        }
+
+        @else if $size==lg {
+          $new_val: round($value);
+          padding-#{$side}:#{$new_val}px;
+        }
+      }
     }
   }
 }
