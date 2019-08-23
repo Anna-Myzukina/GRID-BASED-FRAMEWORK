@@ -11,4 +11,4 @@
 ## Skills: 
 * SCSS, creating grid system
 *  Formula to create margin/padding
-![](formula.png)
+![](img/formula.png)
