@@ -7,3 +7,8 @@
 ## Authors:
 *  [Maya](https://github.com/maya88en)
 *  [Anna-Myzukina](https://github.com/Anna-Myzukina)
+
+## Skills: 
+* SCSS, creating grid system
+*  Formula to create margin/padding
+![](formula.png)

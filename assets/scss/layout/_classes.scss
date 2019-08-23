@@ -1,3 +1,4 @@
+//This formula create next properties for margine/padding : 
 $sides:(top, bottom, left, right);
 $sizes:(sm, md, lg);
 $values:1rem;
@@ -36,7 +37,7 @@ $values:1rem;
  }
 }
 
-//This formula create next properties for margine/padding : 
+
 .margin-top-sm-1rem {
   margin-top: 0remrem; }
 
