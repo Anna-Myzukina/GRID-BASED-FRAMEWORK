@@ -1,137 +1,64 @@
-//This formula create next properties for margine/padding : 
+//This formula create next properties for margin/padding : 
 $sides:(top, bottom, left, right);
 $sizes:(sm, md, lg);
 $values:1rem;
-@each $side in $sides{
- @each $value in $values {
-   @each $size in $sizes{
-   .margin-#{$side}-#{$size}-#{$value} {
-    @if $size == sm {
-       $new_val:round($value/4);
-       margin-#{$side}:#{$new_val}rem;
+
+@each $side in $sides {
+  @each $value in $values {
+    @each $size in $sizes {
+      .margin-#{$side}-#{$size}-#{$value} {
+        @if $size==sm {
+          $new_val: round($value/4);
+          margin-#{$side}:#{$new_val}rem;
+        }
+
+        @else if $size==md {
+          $new_val: round($value/3);
+          margin-#{$side}:#{$new_val}px;
+        }
+
+        @else if $size==lg {
+          $new_val: round($value);
+          margin-#{$side}:#{$new_val}px;
+        }
+      }
+
+      .padding-#{$side}-#{$size}-#{$value} {
+        @if $size==sm {
+          $new_val: round($value/4);
+          padding-#{$side}:#{$new_val}px;
+        }
+
+        @else if $size==md {
+          $new_val: round($value/3);
+          padding-#{$side}:#{$new_val}px;
+        }
+
+        @else if $size==lg {
+          $new_val: round($value);
+          padding-#{$side}:#{$new_val}px;
+        }
+      }
     }
-    @else if  $size == md {
-       $new_val:round($value/3);
-       margin-#{$side}:#{$new_val}px;  
-   }
-   @else if  $size == lg {  
-       $new_val:round($value);
-       margin-#{$side}:#{$new_val}px;
-   }
- }
- .padding-#{$side}-#{$size}-#{$value} {
-   @if $size == sm {
-      $new_val:round($value/4);
-      padding-#{$side}:#{$new_val}px;
-   }
-   @else if  $size == md {
-      $new_val:round($value/3);
-      padding-#{$side}:#{$new_val}px;
   }
-  @else if  $size == lg {
-      $new_val:round($value);
-      padding-#{$side}:#{$new_val}px;
-  }
- }
-   }
- }
 }
 
-
-.margin-top-sm-1rem {
-  margin-top: 0remrem; }
-
-.padding-top-sm-1rem {
-  padding-top: 0rempx; }
-
-.margin-top-md-1rem {
-  margin-top: 0rempx; }
-
-.padding-top-md-1rem {
-  padding-top: 0rempx; }
-
-.margin-top-lg-1rem {
-  margin-top: 1rempx; }
-
-.padding-top-lg-1rem {
-  padding-top: 1rempx; }
-
-.margin-bottom-sm-1rem {
-  margin-bottom: 0remrem; }
-
-.padding-bottom-sm-1rem {
-  padding-bottom: 0rempx; }
-
-.margin-bottom-md-1rem {
-  margin-bottom: 0rempx; }
-
-.padding-bottom-md-1rem {
-  padding-bottom: 0rempx; }
-
-.margin-bottom-lg-1rem {
-  margin-bottom: 1rempx; }
-
-.padding-bottom-lg-1rem {
-  padding-bottom: 1rempx; }
-
-.margin-left-sm-1rem {
-  margin-left: 0remrem; }
-
-.padding-left-sm-1rem {
-  padding-left: 0rempx; }
-
-.margin-left-md-1rem {
-  margin-left: 0rempx; }
-
-.padding-left-md-1rem {
-  padding-left: 0rempx; }
-
-.margin-left-lg-1rem {
-  margin-left: 1rempx; }
-
-.padding-left-lg-1rem {
-  padding-left: 1rempx; }
-
-.margin-right-sm-1rem {
-  margin-right: 0remrem; }
-
-.padding-right-sm-1rem {
-  padding-right: 0rempx; }
-
-.margin-right-md-1rem {
-  margin-right: 0rempx; }
-
-.padding-right-md-1rem {
-  padding-right: 0rempx; }
-
-.margin-right-lg-1rem {
-  margin-right: 1rempx; }
-
-.padding-right-lg-1rem {
-  padding-right: 1rempx; }
-//Float 
-.right-float{
-    float:right!important;
-}
-.left-float{
-    float:left!important;
-}
-.none-float{
-   float: none!important;
-}
 
 //Position
 .position-absolute {
-	position: absolute!important;
+  position: absolute !important;
 }
+
 .position-sticky {
-	position: sticky!important;
+  position: sticky !important;
 }
+
 .position-fixed {
-	position: fixed!important;
+  position: fixed !important;
 }
+
 .position-relative {
-	position: relative!important;
+  position: relative !important;
 }
 
 //Visibility
@@ -145,103 +72,119 @@ $values:1rem;
 }
 
 //The display Property
-.display-flex{
+.display-flex {
   display: flex !important;
 }
-.display-md-none{
-    display: none !important;
+
+.display-md-none {
+  display: none !important;
 }
-.display-inline{
-    display: inline !important;
+
+.display-inline {
+  display: inline !important;
 }
-.display-inline-block{
-    display: inline-block !important;
+
+.display-inline-block {
+  display: inline-block !important;
 }
-.display-block{
-    display: block !important;
+
+.display-block {
+  display: block !important;
 }
 
 // Flex property
-.justify-content-start{
-    justify-content: start !important;
-}
-.justify-content-end{
-    justify-content: end !important;
-}
-.justify-content-center{
-    justify-content: center !important;
+.justify-content-start {
+  justify-content: start !important;
 }
 
-.align-items-center{
-align-items: center !important;
-}
-.align-items-end{
-align-items: end !important;
-}
-.align-items-start{
-align-items: start !important;
+.justify-content-end {
+  justify-content: end !important;
 }
 
-.text-align-left{
-    text-align: left;
-}
-.text-align-center{
-    text-align: center;
-}
-.text-align-right{
-    text-align: right;
+.justify-content-center {
+  justify-content: center !important;
 }
 
-.text-transform-uppercase{
-    text-transform: uppercase;
+.align-items-center {
+  align-items: center !important;
 }
-.text-transform-lowercase{
-    text-transform: lowercase;
+
+.align-items-end {
+  align-items: end !important;
 }
-.text-transform-capitalize{
-    text-transform: capitalize;
+
+.align-items-start {
+  align-items: start !important;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-transform-uppercase {
+  text-transform: uppercase;
+}
+
+.text-transform-lowercase {
+  text-transform: lowercase;
+}
+
+.text-transform-capitalize {
+  text-transform: capitalize;
 }
 
 h1 {
-    font-size: $spacing * 2;
+  font-size: $spacing * 2;
 
 }
 
 h2 {
-    font-size: $spacing * 1.5;
+  font-size: $spacing * 1.5;
 
 }
 
 h3 {
-    font-size: $spacing * 1.17;
+  font-size: $spacing * 1.17;
 
 }
 
 h4,
 p,
 span {
-    font-size: $spacing;
+  font-size: $spacing;
 
 }
 
 h5 {
-    font-size: $spacing * .80;
+  font-size: $spacing * .80;
 
 }
 
 h6 {
-    font-size: $spacing * .6;
+  font-size: $spacing * .6;
 
 }
-.font-bold{
+
+.font-bold {
   font-weight: bold;
 }
-.font-normal{
+
+.font-normal {
   font-weight: normal;
 }
-.font-medium{
+
+.font-medium {
   font-weight: 500;
 }
+
 //Border property
 
 .border-0 {
@@ -264,70 +207,89 @@ h6 {
   border-left: 0 !important;
 }
 
-.border-sm-1{
+.border-sm-1 {
   border: 1px solid $redMain;
 }
-.border-sm-left-1{
+
+.border-sm-left-1 {
   border-left: 1px solid $redMain;
 }
-.border-sm-right-1{
+
+.border-sm-right-1 {
   border-right: 1px solid $redMain;
 }
-.border-sm-top-1{
+
+.border-sm-top-1 {
   border-top: 1px solid $redMain;
 }
-.border-sm-bottom-1{
+
+.border-sm-bottom-1 {
   border-bottom: 1px solid $redMain;
 }
 
-.border-md-2{
+.border-md-2 {
   border: 2px solid $redMain;
 }
-.border-md-left-2{
+
+.border-md-left-2 {
   border-left: 2px solid $redMain;
 }
-.border-md-right-2{
+
+.border-md-right-2 {
   border-right: 1px solid $redMain;
 }
-.border-md-top-2{
+
+.border-md-top-2 {
   border-top: 1px solid $redMain;
 }
-.border-md-bottom-2{
+
+.border-md-bottom-2 {
   border-bottom: 2px solid $redMain;
 }
-.border-ld-5{
+
+.border-ld-5 {
   border: 5px solid $redMain;
 }
-.border-ld-left-5{
+
+.border-ld-left-5 {
   border-left: 5px solid $redMain;
 }
-.border-ld-right-5{
+
+.border-ld-right-5 {
   border-right: 5px solid $redMain;
 }
-.border-ld-top-5{
+
+.border-ld-top-5 {
   border-top: 1px solid $redMain;
 }
-.border-ld-bottom-5{
+
+.border-ld-bottom-5 {
   border-bottom: 5px solid $redMain;
 }
-.border-radius-sm{
+
+.border-radius-sm {
   border-radius: .25rem;
 }
-.border-radius-md{
+
+.border-radius-md {
   border-radius: .5rem;
 }
-.border-radius-lg{
+
+.border-radius-lg {
   border-radius: 1rem;
 }
-.border-rounder{
+
+.border-rounder {
   border-radius: 50%;
 }
+
 // Main property 
-.main-bg{
-    background: $bg;
+.main-bg {
+  background: $bg;
 }
-.text-color{
-    color: $colorText;
+
+.text-color {
+  color: $colorText;
 }
 
 // 
