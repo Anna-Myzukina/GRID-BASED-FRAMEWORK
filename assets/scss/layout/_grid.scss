@@ -1,4 +1,4 @@
-// keys with properties of sizes of screen
+// keys with properties of sizes of screen this arrey we use in next part to create madia
 $breakpoints: ('small': 425px,
     'medium': 768px,
     'large': 1024px,
@@ -7,18 +7,15 @@ $breakpoints: ('small': 425px,
 /// this variable means number of column in your project, if you need you can
 ///  change to any number and use next formula to create grid system:
 $cols: 12;
-$spacing: 1rem; 
-$sides:(top, bottom, left, right);
-$sizes:(sm, md, lg);
-$values:(0, .25rem, .5rem, 1rem);
+
 @mixin break($size) {
-    @media (min-width: map-get($breakpoints, $size)) {
+    @media (min-width: map-get($breakpoints, $size)) {  //syntaxis : map-get($map, $key)function 
+        //the function returns the value in the map associated with the given key
         @content;
     }
 }
 
-@each $key,
-$value in $breakpoints {
+@each $key,$value in $breakpoints { //the each rule evaluates a block of styles for each key/value pair in map
     @include break($key) {
         @for $i from 1 through $cols {
             .col-#{$key}-#{$i} {

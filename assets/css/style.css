@@ -192,6 +192,10 @@ table {
   margin-top: 50px;
   background: #fff; }
 
+.explore {
+  color: #006fc6;
+  text-decoration: none; }
+
 a,
 span {
   display: -webkit-inline-box;
