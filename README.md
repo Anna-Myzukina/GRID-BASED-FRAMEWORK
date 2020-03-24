@@ -3,16 +3,18 @@
 ![screen](https://github.com/Anna-Myzukina/GRID-BASED-FRAMEWORK/blob/master/assets/img/2.png)
 ## HTML and CSS PROJECT: DESIGN YOUR OWN GRID-BASED FRAMEWORK
 
-## Description
-* [Project description](https://www.theodinproject.com/courses/html5-and-css3/lessons/design-your-own-grid-based-framework)
+## [Project description](https://www.theodinproject.com/courses/html5-and-css3/lessons/design-your-own-grid-based-framework)
+
+* In this project, we built our own simple grid-based framework. 
+
 ## Original version
-- [ ] [Smashingmagazine](https://www.smashingmagazine.com/)
+- [Smashingmagazine](https://www.smashingmagazine.com/)
 
 ## Demo version
-- [ ] [Preview](raw.githack.com/Anna-Myzukina/NGRID-BASED-FRAMEWORK/developer/index.html)
+- [Preview](raw.githack.com/Anna-Myzukina/NGRID-BASED-FRAMEWORK/developer/index.html)
 
 ## Live version
-- [ ] [Live version](https://anna-myzukina.github.io/GRID-BASED-FRAMEWORK/)
+- [Live version](https://anna-myzukina.github.io/GRID-BASED-FRAMEWORK/)
 
 ## Skills
 * HTML/CSS/SCSS
@@ -22,7 +24,8 @@
 
 ## Features
 
-- [ ] Mixins formulas necessary to create a basic:
+` Mixins formulas necessary to create a basic:`
+
 * 12-column grid framework, 
 * colours, 
 * margins, 
@@ -46,13 +49,13 @@
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
+- Contributions, issues and feature requests are welcome!
 
 Feel free to check the [issues page](issues/).
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+- Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
@@ -62,4 +65,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+- This project is [MIT](lic.url) licensed.
