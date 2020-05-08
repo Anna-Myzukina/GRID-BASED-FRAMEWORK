@@ -1,7 +1,7 @@
 # Project: GRID-BASED-FRAMEWORK
 
 ![screen](https://github.com/Anna-Myzukina/GRID-BASED-FRAMEWORK/blob/master/assets/img/2.png)
-## HTML and CSS PROJECT: DESIGN YOUR OWN GRID-BASED FRAMEWORK
+## HTML and CSS PROJECT: DESIGN OWN GRID-BASED FRAMEWORK
 
 ## [Project description](https://www.theodinproject.com/courses/html5-and-css3/lessons/design-your-own-grid-based-framework)
 
@@ -27,7 +27,7 @@
 ` Mixins formulas necessary to create a basic:`
 
 * 12-column grid framework, 
-* colours, 
+* colors, 
 * margins, 
 * paddings, 
 * typography, 
@@ -59,8 +59,8 @@ Feel free to check the [issues page](issues/).
 
 ## Acknowledgments
 
-- Bootstrap 4 framework - it was taken as base to create our own.
-- Prepros - a free cross platform compiler available for Windows, Mac OS, and Linux.
+- Bootstrap 4 framework - it was taken as a base to create our own.
+- Prepros - a free cross-platform compiler available for Windows, Mac OS, and Linux.
 
 
 ## 📝 License
