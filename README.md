@@ -10,8 +10,6 @@
 ## Original version
 - [Smashingmagazine](https://www.smashingmagazine.com/)
 
-## Demo version
-- [Preview](raw.githack.com/Anna-Myzukina/NGRID-BASED-FRAMEWORK/developer/index.html)
 
 ## Live version
 - [Live version](https://anna-myzukina.github.io/GRID-BASED-FRAMEWORK/)
@@ -35,18 +33,6 @@
 
 ![](img/formula.png)
 
-## Authors
-
-👤 **Author1**
-
-- Github: [Maya](https://github.com/maya88en)
-
-👤 **Author2**
-
-- Github: [@Anna-Myzukina](https://github.com/githubhandle)
-- Twitter: [@AnnaMuzykina](https://twitter.com/twitterhandle)
-- Linkedin: [Anna Muzykina](https://linkedin.com/linkedinhandle)
-
 ## 🤝 Contributing
 
 - Contributions, issues and feature requests are welcome!
@@ -66,3 +52,19 @@ Feel free to check the [issues page](issues/).
 ## 📝 License
 
 - This project is [MIT](https://github.com/Anna-Myzukina/GRID-BASED-FRAMEWORK/blob/master/LICENSE.md) licensed.
+
+
+## Authors
+
+👤 **Author1**
+
+- Github: [Maya](https://github.com/maya88en)
+
+👤 **Author2**
+
+- Github: [@Anna-Myzukina](https://github.com/githubhandle)
+- Twitter: [@AnnaMuzykina](https://twitter.com/twitterhandle)
+- Linkedin: [Anna Muzykina](https://linkedin.com/linkedinhandle)
+- email: anna.muzykina83@gmail.com
+
+
