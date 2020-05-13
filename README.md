@@ -1,7 +1,7 @@
-# Project: GRID-BASED-FRAMEWORK
+# Project: Grid based framework
 
 ![screen](https://github.com/Anna-Myzukina/GRID-BASED-FRAMEWORK/blob/master/assets/img/2.png)
-## HTML and CSS PROJECT: DESIGN OWN GRID-BASED FRAMEWORK
+## HTML and CSS project: design own Grid based framework.
 
 ## [Project description](https://www.theodinproject.com/courses/html5-and-css3/lessons/design-your-own-grid-based-framework)
 
